@@ -72,26 +72,26 @@
         "ext-soap": "*",
         "sjparkinson/static-review": "~4.1",
         "ramsey/uuid": "3.7.1",
-        "magento/module-theme-sample-data": "100.2.*",
-        "magento/module-sales-rule-sample-data": "100.2.*",
-        "magento/module-grouped-product-sample-data": "100.2.*",
-        "magento/module-review-sample-data": "100.2.*",
-        "magento/module-msrp-sample-data": "100.2.*",
+        "magento/module-bundle-sample-data": "100.2.*",
+        "magento/module-catalog-sample-data": "100.2.*",
         "magento/module-catalog-rule-sample-data": "100.2.*",
         "magento/module-cms-sample-data": "100.2.*",
-        "magento/module-bundle-sample-data": "100.2.*",
-        "magento/module-tax-sample-data": "100.2.*",
-        "magento/sample-data-media": "100.2.*",
-        "magento/module-downloadable-sample-data": "100.2.*",
-        "magento/module-swatches-sample-data": "100.2.*",
         "magento/module-configurable-sample-data": "100.2.*",
         "magento/module-product-links-sample-data": "100.2.*",
-        "magento/module-offline-shipping-sample-data": "100.2.*",
-        "magento/module-catalog-sample-data": "100.2.*",
-        "magento/module-wishlist-sample-data": "100.2.*",
         "magento/module-customer-sample-data": "100.2.*",
+        "magento/module-downloadable-sample-data": "100.2.*",
+        "magento/module-grouped-product-sample-data": "100.2.*",
+        "magento/module-msrp-sample-data": "100.2.*",
+        "magento/module-offline-shipping-sample-data": "100.2.*",
+        "magento/module-review-sample-data": "100.2.*",
         "magento/module-sales-sample-data": "100.2.*",
-        "magento/module-widget-sample-data": "100.2.*"
+        "magento/module-sales-rule-sample-data": "100.2.*",
+        "magento/sample-data-media": "100.2.*",
+        "magento/module-swatches-sample-data": "100.2.*",
+        "magento/module-tax-sample-data": "100.2.*",
+        "magento/module-theme-sample-data": "100.2.*",
+        "magento/module-widget-sample-data": "100.2.*",
+        "magento/module-wishlist-sample-data": "100.2.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
@@ -283,7 +283,11 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
+<<<<<<< HEAD
+    "minimum-stability": "stable",
+=======
     "minimum-stability": "dev",
+>>>>>>> 6ba55e2c09c6fc933901515bf2294f54ae7b9720
     "repositories": [{
             "type": "composer",
             "url": "https://repo.magento.com"
