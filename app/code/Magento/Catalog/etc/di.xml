@@ -1057,4 +1057,10 @@
             <argument name="productRepository" xsi:type="object">Magento\Catalog\Api\ProductRepositoryInterface\Proxy</argument>
         </arguments>
     </type>
+    <type name="Magento\Catalog\Model\Config">
+        <plugin name="Package_CustomToolbar::addCustomOptions" type="Magento\Catalog\Block\Product\ProductList\Toolbar" sortOrder="3"/>
+    </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="Package_CustomToolbar::addPriceDecendingFilterInToolbar" type="Magento\Catalog\Block\Product\ProductList\Toolbar" sortOrder="2" />
+    </type>
 </config>
