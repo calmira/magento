@@ -197,6 +197,12 @@ class Toolbar extends \Magento\Framework\View\Element\Template
                     $this->getCurrentOrder(),
                     $this->getCurrentDirection()
                 )->addAttributeToSort('entity_id', $this->getCurrentDirection());
+            } else if ($this->getCurrentOrder() == 'rating') {
+            	if ($this->getCurrentDirection() == 'desc') {
+            		$this->_collection->getSelect()->order('e.rating DESC');
+            	} else {
+            		$this->_collection->getSelect()->order('e.rating ASC');
+            	}
             } else {
                 $this->_collection->setOrder($this->getCurrentOrder(), $this->getCurrentDirection());
             }
@@ -722,4 +728,9 @@ class Toolbar extends \Magento\Framework\View\Element\Template
         }
         return $this;
     }
+
+    public function afterGetAttributeUsedForSortByArray(\Magento\Catalog\Model\Config $catalogConfig, $options) {
+			$options['rating'] = __('Rating');
+			return $options;
+		}
 }
