@@ -283,11 +283,7 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
-<<<<<<< HEAD
-    "minimum-stability": "stable",
-=======
     "minimum-stability": "dev",
->>>>>>> 6ba55e2c09c6fc933901515bf2294f54ae7b9720
     "repositories": [{
             "type": "composer",
             "url": "https://repo.magento.com"
