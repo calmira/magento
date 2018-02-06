@@ -91,7 +91,8 @@
         "magento/module-tax-sample-data": "100.2.*",
         "magento/module-theme-sample-data": "100.2.*",
         "magento/module-widget-sample-data": "100.2.*",
-        "magento/module-wishlist-sample-data": "100.2.*"
+        "magento/module-wishlist-sample-data": "100.2.*",
+        "mageplaza/module-core": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
